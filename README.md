@@ -1,21 +1,23 @@
 # Frenemy
 
 What's frenemy? <br/>
- - frenemy is a combination of the words friend and enemy
- - It represents a relationship where individuals have a friendly bond but also engage in competition or rivalry.
+
+- frenemy is a combination of the words friend and enemy
+- It represents a relationship where individuals have a friendly bond but also engage in competition or rivalry.
 
 Product Information <br/>
- - Through this web service, users can register their tennis courts for hosting, and other users can make reservations for these courts. 
- - We also provide a partner matching service for users who are looking for tennis partners to play with. 
- - Users can utilize the matching system to find suitable partners based on their skill levels.
+
+- Through this web service, users can register their tennis courts for hosting, and other users can make reservations for these courts.
+- We also provide a partner matching service for users who are looking for tennis partners to play with.
+- Users can utilize the matching system to find suitable partners based on their skill levels.
 
 What key values and meanings our product delivers to its users<br/>
- - Easy Reservation Process
- - Time and Cost Saving
- - Enhanced Playing Experience
- - Matching System
- - Social Networking and Community Building
 
+- Easy Reservation Process
+- Time and Cost Saving
+- Enhanced Playing Experience
+- Matching System
+- Social Networking and Community Building
 
 <div align="center">
   
@@ -25,12 +27,11 @@ What key values and meanings our product delivers to its users<br/>
 <a href="https://github.com/patataco">Heeyeon Kim<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white&link=https://github.com/hongyeollee"/></a>
 <a href="https://github.com/jeonseungbeom">Seungbeom Jeon<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white&link=https://github.com/hongyeollee"/></a>
 <a href="https://github.com/min2oyo">Jinmin Yang<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white&link=https://github.com/hongyeollee"/></a>
-  
+
 ## BackEnd
 
 <a href="https://github.com/jinss5">Jinseok Oh<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"></a>
 <a href="https://github.com/haaazzi">Jihyun Ha<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white&link=https://github.com/hongyeollee"/></a>
-
 
 </div>
   
@@ -59,7 +60,30 @@ What key values and meanings our product delivers to its users<br/>
 
 <h2>ERD diagram</h2>
 <img src="https://github.com/jinss5/tennis-host-and-match/assets/62521403/131753de-6ef0-42e2-9b3a-5b7784d8d95c">
+</br>
+</br>
 
+<h2>Key Features</h2>
 
+### `Auth`
 
+- Implemented OAuth2.0 utilizing kakao social login
+- Implemented token-based authentication using the widely adopted jsonwebtoken library, ensuring secure and reliable user authentication.<br/>
 
+### `Main Page & Match Page & My Page`
+
+- Implemented diverse filtering and ordering options for 10 different features
+- Applied infinite scrolling throughout.
+
+### `Match Players`
+
+- Implemented 'matching system'.
+
+### `Payments`
+
+- Utilized external toss payments API to incorporate a more convienient way to make the payments.
+- Applied transaction on diverse payment methods including: matching players, reserving courts, and hosting courts
+
+### `Hosting`
+
+- Managed to upload court images using AWS S3.
