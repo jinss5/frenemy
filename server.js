@@ -3,13 +3,13 @@ require('dotenv').config();
 const { createApp } = require('./app.js');
 const reservationService = require('./src/services/reservationService');
 const { dataSource } = require('./src/models/dataSource');
-const { scheduleJob } = require('node-schedule');
+// const { scheduleJob } = require('node-schedule');
 
-const cancelReservation = () => {
-  scheduleJob('0 0 0 * * *', async () => {
-    await reservationService.cancelReservation();
-  });
-};
+// const cancelReservation = () => {
+//   scheduleJob('0 0 0 * * *', async () => {
+//     await reservationService.cancelReservation();
+//   });
+// };
 
 const startServer = async () => {
   try {
@@ -27,7 +27,7 @@ const startServer = async () => {
       });
     app.listen(PORT, () => {
       console.log(`Server is listening on ${PORT}`);
-      cancelReservation();
+      // cancelReservation();
     });
   } catch (err) {
     console.error(err);
